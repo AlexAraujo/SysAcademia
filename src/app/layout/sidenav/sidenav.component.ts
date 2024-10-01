@@ -19,14 +19,14 @@ export class SidenavComponent {
           label: 'Dashboard',
       },
       {
-          routeLink: 'products',
+          routeLink: 'financeiro',
           icon: 'fal fa-box-open',
-          label: 'Products',
+          label: 'Financeiro',
       },
       {
-          routeLink: 'pages',
+          routeLink: 'financeiro/boletos',
           icon: 'fal fa-file',
-          label: 'Pages',
+          label: 'Boletos',
       },
       {
           routeLink: 'settings',
