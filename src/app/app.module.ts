@@ -1,26 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './modules/home/dashboard/dashboard.component';
-import { VerticalComponent } from './layout/vertical/vertical.component';
-import { NavbarComponent } from './layout/navbar/navbar.component';
-import { SidenavComponent } from './layout/sidenav/sidenav.component';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeModule } from './modules/home/home.module';
+import { LayoutModule } from './layout/layout.module';
+import { SidenavComponent } from "./layout/sidenav/sidenav.component";
+import { MainComponent } from "./layout/main/main.component";
+
+const appRoutes: Routes = [
+  {
+    path: '',
+    pathMatch: 'full',
+  }
+];
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DashboardComponent,
-    VerticalComponent,
-    NavbarComponent,
-    SidenavComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    RouterModule.forRoot(appRoutes),
+    HomeModule,
+    LayoutModule,
+    SidenavComponent,
+    MainComponent
+],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule { }
