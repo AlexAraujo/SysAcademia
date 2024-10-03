@@ -22,11 +22,23 @@ export class SidenavComponent {
           routeLink: 'financeiro',
           icon: 'fal fa-box-open',
           label: 'Financeiro',
+          // subItems: [
+          //   // {
+          //   //   routeLink: 'financeiro/boletos',
+          //   //   icon: 'fal fa-cloud',
+          //   //   label: 'Boletos'
+          //   // }
+          // ]
       },
       {
           routeLink: 'financeiro/boletos',
-          icon: 'fal fa-file',
+          icon: 'fal fa-cloud',
           label: 'Boletos',
+      },
+      {
+          routeLink: 'cadastro',
+          icon: 'fal fa-file',
+          label: 'Cadastro',
       },
       {
           routeLink: 'settings',

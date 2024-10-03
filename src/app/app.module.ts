@@ -7,6 +7,7 @@ import { HomeModule } from './modules/home/home.module';
 import { LayoutModule } from './layout/layout.module';
 import { SidenavComponent } from "./layout/sidenav/sidenav.component";
 import { MainComponent } from "./layout/main/main.component";
+import { HomeCadastroComponent } from './modules/cadastro/home-cadastro/home-cadastro.component';
 
 const appRoutes: Routes = [
   {
@@ -18,6 +19,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
 
+
+    HomeCadastroComponent
   ],
   imports: [
     BrowserModule,
